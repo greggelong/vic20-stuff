@@ -21,7 +21,10 @@
 330 y(m)=y(m)-1
 340 poke7680+x(m)+22*y(m),m+1
 350 if y(m) = 5 then print
-"race won":end
+"race won":goto 500
 360 goto320
+500 input"race again y n";b$
+510 if b$<>"y" then end
+520 goto 10
 
 
